@@ -23,6 +23,7 @@ public class ColorPicker : MonoBehaviour
             
             newButton.onClick.AddListener(() =>
             {
+                
                 SelectedColor = color;
                 foreach (var button in m_ColorButtons)
                 {
@@ -40,7 +41,7 @@ public class ColorPicker : MonoBehaviour
 
     public void SelectColor(Color color)
     {
-        for (int i = 0; i < AvailableColors.Length; ++i)
+        for (int i = 0; i < AvailableColors.Length;++i)
         {
             if (AvailableColors[i] == color)
             {
